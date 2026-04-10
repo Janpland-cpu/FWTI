@@ -1,4 +1,4 @@
-# SBTI 静态站点（NAS Container 版）
+# FWTI 静态站点（NAS Container 版）
 
 这是一个**纯 HTML + CSS + JavaScript** 的移动端优先人格测试站，数据来自静态 JSON，前端在浏览器里完成题目作答、计分、主/副标签判定、隐藏标签触发与结果页渲染。
 
@@ -31,7 +31,7 @@
 ### 方式 1：Python 临时静态服务
 
 ```bash
-cd /path/to/sbti_web_static
+cd /path/to/fwti_web_static
 python3 -m http.server 8080
 ```
 
@@ -60,7 +60,7 @@ http://localhost:8088
 1. 在 NAS 上创建一个项目目录，例如：
 
 ```text
-/docker/sbti-site
+/docker/fwti-site
 ```
 
 2. 把本项目所有文件上传到这个目录。
