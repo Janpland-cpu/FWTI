@@ -1,0 +1,1849 @@
+{
+  "site": {
+    "title": "FWTI 大精神病时代人格测绘",
+    "hero": "MBTI 已经过时，FWTI 来了。",
+    "subtitle": "不是你有病，是你的防御终于长成了人格。",
+    "intro": "以霍妮新精神分析为底盘，把 30 道情境题做成一个能拿来玩、也能拿来照自己的静态测试站。",
+    "disclaimer": "本测试仅供娱乐与自我观察，不是临床诊断、面试筛选、相亲审批、分手依据或人生判决书。",
+    "instructions": [
+      "每题只选 1 个最像你自然反应的选项，不选“应该如此”的选项。",
+      "以过去 12 个月的惯常反应为准，不以一次特殊事件为准。",
+      "如果多个选项都像，优先选择“你最容易自动做出来”的那个。"
+    ],
+    "quizPrompt": "全做完才放行。世界已经够乱了，起码把题做完整。",
+    "resultTitle": "怎么样，被 FWTI 拿捏了吧？",
+    "footer": "前端：纯 HTML + CSS + JavaScript｜后端：静态 JSON｜部署：NAS Container 直接跑。"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "prompt": "你在工作群发了一条自认为很清楚的消息，半天没人回。你更像哪种反应？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先反思是不是自己说得太冒犯或太啰嗦，补一句“可能我没表达清楚”。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "私聊一个你最信得过的人，想先听听他怎么理解、该不该继续推进。",
+          "score": {
+            "label": "P02",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "告诉自己别想太多，干脆把这件事降级处理，不重要就算了。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "当作没发生，晚点重写一版更得体、更不容易被挑错的说法。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "P",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "直接少说两天，避免再把自己放进这种悬着的位置。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "小组合作里有人明显掉链子，最接近你的第一反应是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先把缺口补上，别让整体难看，回头再说。",
+          "score": {
+            "label": "P04",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "先把场面稳住，不当众点人，私下慢慢处理。",
+          "score": {
+            "label": "P05",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "立刻把分工、截止时间、责任人重新排清楚。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "D",
+          "text": "记住谁不靠谱，以后在资源和情感上都少投一点。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "把标准往下调，能交差就行，别再额外消耗。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "亲密对象对你说“你决定吧，都可以”。你更可能怎么做？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先追问他是不是其实有偏好，怕自己选错让他失望。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "希望对方干脆替你定，你会轻松很多。",
+          "score": {
+            "label": "P02",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "迅速把方案列清、利弊排好，然后拍板。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "D",
+          "text": "把每个细节都想周全，尽量做到“这选择没有破绽”。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "表面说都行，内心默认最好别把两个人绑得太紧。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "你原本计划周末休息，朋友临时来找你帮忙搬家。你更像哪种做法？",
+      "options": [
+        {
+          "key": "A",
+          "text": "答应，怕拒绝后关系会变味。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "答应，而且会顺手照顾大家情绪，别让现场尴尬。",
+          "score": {
+            "label": "P04",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "答应，但这笔人情会默默记在心里。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "先把时间、流程、分工问清，不合理就当场改。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "E",
+          "text": "找个不伤和气的理由推掉，尽量把消耗控制住。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "家庭聚餐时，又有人开始问你的工作、收入、婚恋。你通常更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先给一个让长辈放心的答案，不想让他们失望。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会把情况讲得体面一点，尽量别显得自己过得狼狈。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "P",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "让家里更会说话的人替你挡一下、接一下。",
+          "score": {
+            "label": "P02",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "直接把话题截断，告诉他们这事不适合展开。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "E",
+          "text": "笑笑说“都还行”，然后把自己从这类对话里抽掉。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "朋友忘了你很在意的一个日子。你最像哪种反应？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先替对方找理由，告诉自己别太计较。",
+          "score": {
+            "label": "P05",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "嘴上说没事，但之后会明显收一点热情。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "会想：以后这种关系没必要投入这么深。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "表面平静，实则把这件事封进“以后少期待”的档案里。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "马上找机会把自己的重要性重新抬回来。",
+          "score": {
+            "label": "P10",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "领导临时改方案，推翻你之前做的大半工作。你最像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先确认是不是自己哪里没考虑周全。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "立刻重整优先级，重新把节奏拉回可控。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "C",
+          "text": "表面配合，内心把这次委屈攒起来。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "快速进入执行状态，先把结果救回来再说。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "瞬间有种‘再努力也就这样’的疲惫，想先撤开一点。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "看到同龄人发的升职、买房、结婚消息，你更容易出现哪种感受？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会下意识想：不能显得自己已经被同龄人甩开。",
+          "score": {
+            "label": "P12",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会立刻想：我也得赶紧把下一步做出来。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "心里自动进入排名模式，开始算自己现在在第几梯队。",
+          "score": {
+            "label": "P12",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "告诉自己降低期待，别把人生搞成赛跑。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "会滑过去，但整个人更像旁观一场别人的游戏。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "亲密关系里出现分歧时，你更习惯怎么处理？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先哄、先顺、先让局面别继续恶化。",
+          "score": {
+            "label": "P05",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "希望对方给一个明确说法，你好照着做。",
+          "score": {
+            "label": "P02",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "把规则、边界、问题点摊开讲清。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "D",
+          "text": "先撤开，等自己不被卷进去再说。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "一边说算了，一边心里把对方扣很多分。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "在一场局里，大家突然开始认真聊“你最近真实过得怎么样”。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先说点让大家放心的版本，不想让气氛沉下去。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会接住别人，帮别人把话说出来，自己反而少说。",
+          "score": {
+            "label": "P04",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "会讲一个体面但可控的版本，不让自己太失态。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "P",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会短暂失语，因为你其实不知道从哪里开始讲真的。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "会抽离地看着这个场面，觉得大家突然认真得有点陌生。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "有人在公开场合质疑你的工作成果。你第一反应更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先找是不是自己真有漏洞，脑内迅速复盘。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "当场把事实、标准、流程讲清，不让局面乱掉。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "C",
+          "text": "表面克制，心里已经开始算这人之后值不值得合作。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "你会很在意自己是不是显得不专业、不体面。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "外表没什么变化，但情绪会直接冻住。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "你发给重要的人一段很真诚的话，对方已读很久没回。你更可能？",
+      "options": [
+        {
+          "key": "A",
+          "text": "开始反省是不是自己说太多、太黏、太不合时宜。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "找共同熟人或其他线索，想确认是不是出了什么事。",
+          "score": {
+            "label": "P02",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "嘴上说没关系，但这笔账会记得非常清楚。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "索性把情绪收回来，告诉自己以后少交底。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "会很想用更强一点的存在感把对方拉回来。",
+          "score": {
+            "label": "P10",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "一个项目最终黄了，主要原因并不完全在你。你更像哪种处理？",
+      "options": [
+        {
+          "key": "A",
+          "text": "还是会默认自己应该再做得更好一点。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "先把复盘写清，把可控环节都补牢。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "C",
+          "text": "最受不了的是这件事让你看起来很掉价。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "告诉自己下次别投入那么多，需求和热情都降一点。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "会有一种‘算了，很多事本来也没必要太当真’的抽离感。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "你确实需要别人帮一个忙，但开口前，你更容易卡在哪？",
+      "options": [
+        {
+          "key": "A",
+          "text": "怕麻烦别人，担心人家觉得你不够懂事。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "希望最好有一个你特别信任的人来接手判断。",
+          "score": {
+            "label": "P02",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "怕一旦开口就显得自己准备不足、有破绽。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "更想自己硬扛，避免欠关系和暴露需要。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "会先评估这个人值不值得你欠这个情。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "prompt": "你提出的点子没被重视，后来别人换种说法说出来却被夸。你最像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会想是不是自己表达得还不够好。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会明显不爽，想把功劳和署名拿回来。",
+          "score": {
+            "label": "P12",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "表面不说，但之后会重新判断这群人的合作价值。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会更想做出一个更亮眼的版本来证明自己。",
+          "score": {
+            "label": "P10",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "会有点心凉，之后减少在这种场合的投入感。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "prompt": "有人连续几次越过你的边界，比如临时改你的安排、替你做决定。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先忍一下，看看是不是自己太敏感。",
+          "score": {
+            "label": "P05",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会讲清规则，以后怎么做必须按边界来。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "C",
+          "text": "表面接受，心里已经开始降温和记账。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "不会吵，但会迅速把关系拉远。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "会更严格要求自己别再给别人可乘之机。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "prompt": "到了绩效/考核/答辩节点，你更像是靠什么把自己撑过去？",
+      "options": [
+        {
+          "key": "A",
+          "text": "靠再完成一点我就能心安一点。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "靠我至少要显得比周围人更稳、更能打。",
+          "score": {
+            "label": "P12",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "靠不能输给同批次的人。",
+          "score": {
+            "label": "P12",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "靠详细计划和自我管理，把变量压到最低。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "靠告诉自己这事没那么重要，先把期待降一点。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "prompt": "朋友情绪上头，半夜找你倾诉两个小时。第二天你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "继续安抚对方，怕他一个人扛不住。",
+          "score": {
+            "label": "P04",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会有点累，但不会马上说，先把关系稳住。",
+          "score": {
+            "label": "P05",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "嘴上没事，心里开始觉得“怎么总是我来兜底”。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会重新给这段关系分级，决定以后开放到什么程度。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "会下意识把回复频率调低，先把自己抽回来。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "prompt": "你发了一条很用心的朋友圈/社媒内容，但反响平平。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会有点失落，怀疑是不是自己不够讨喜。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会重新润色表达，下次发得更有质感。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "会想办法让更多人看见，至少不能白发。",
+          "score": {
+            "label": "P10",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "告诉自己以后少发这类需要回应的东西。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "会冷静分析什么内容更有效、更值得投放。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "prompt": "突然空出一整天，没有工作、没有约。你更容易怎么过？",
+      "options": [
+        {
+          "key": "A",
+          "text": "第一反应是找点事做，不然会有点不安。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "把环境和待办重新整理一遍，让秩序回来。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "C",
+          "text": "认真收拾一下自己和生活状态，别让人看出松散。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会躺平并把很多需求一起调低，觉得这样最省事。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "很容易直接进入低功耗，什么都不太想感受。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "prompt": "亲近的人对你说：“我有时候根本不知道你到底在想什么。”你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会马上解释，试图让对方安心。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会有点委屈，觉得自己明明已经做很多了。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "会说“我只是不想把情绪倒给别人”。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "D",
+          "text": "你会发现自己确实很难直接说出真实感受。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "会觉得说太明白也改变不了什么，于是保持观察。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "prompt": "面前有两个选择：一个稳定但没那么喜欢，一个喜欢但风险更高。你更偏向？",
+      "options": [
+        {
+          "key": "A",
+          "text": "选稳定，先别让自己掉下去。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "选更能维持体面和安全感的那个。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "选更能继续积累成绩和筹码的那个。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会做一大套风控和预案，确保没有明显破绽再选。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "表面说看缘分，实际倾向于不被任何选项绑住。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "prompt": "你在公开场合有点出糗，比如说错话、弄错称呼、发错文件。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会反复回放，觉得自己怎么这么不体面。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会立刻补救，把场面重新拉回专业和稳妥。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "C",
+          "text": "会很想从此把同类失误彻底清零。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "嘴上开玩笑带过，心里却很久都过不去。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "外表无波，内里像被按了静音键。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "prompt": "去一个基本没人认识你的饭局/婚礼/局，你通常怎么进入状态？",
+      "options": [
+        {
+          "key": "A",
+          "text": "先观察谁最友好，尽量让自己快点被接纳。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "主动照顾场面、递话、接话，让自己有位置。",
+          "score": {
+            "label": "P04",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "先判断谁有资源、谁值得深聊。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会下意识把自己的出场状态调到一个让人愿意看见的版本。",
+          "score": {
+            "label": "P10",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "宁可低耗旁观，也不急着融进去。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "prompt": "你连续忙了很久，身体和情绪都在提示你该停了。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "继续撑，因为别人还在等你、靠你。",
+          "score": {
+            "label": "P04",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "继续撑，因为停下来会觉得自己很没用。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "继续撑，因为一松就可能失控、掉链子。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "先把最低需求模式打开，能省就省。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "整个人会直接切到省电模式，像短暂消失。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "prompt": "如果有人认真问你：“那你自己真正想要什么？”你更像哪种卡住？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会先想到别人希望你成为什么样。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会先想到什么选择更稳、更不惹麻烦。",
+          "score": {
+            "label": "P03",
+            "group": "M",
+            "hostility": "N",
+            "g": 0,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "会先想到什么版本的自己更像样。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会先想到什么目标更能证明自己。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "你可能一时真的答不上来，因为很久没问过自己。",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "prompt": "你确实做错了一件事，需要向别人道歉。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会很在意对方会不会因此讨厌你。",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会把责任、后续补救、流程一并交代清楚。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "C",
+          "text": "会对自己的失误感到强烈羞耻，想尽快修平痕迹。",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会担心这件事损伤你在别人心中的形象。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "会说得很完整，但情感上保持一点距离。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "prompt": "一个和你差不多背景的人突然跑得很快、机会很多。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "会想：我是不是也该再努力一点，不然不配站在这。",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会进入明显的比较状态，不想被甩在后面。",
+          "score": {
+            "label": "P12",
+            "group": "D",
+            "hostility": "O",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "会先看对方用了什么路径、资源、关系结构。",
+          "score": {
+            "label": "P08",
+            "group": "D",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会更想把自己包装到足够能打、足够像样。",
+          "score": {
+            "label": "P09",
+            "group": "D",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "E",
+          "text": "会说服自己别卷这套系统，拉开一点距离。",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "prompt": "过年或回家期间，如果你发现自己又在扮演“那个最省心的人”。你更像？",
+      "options": [
+        {
+          "key": "A",
+          "text": "顺手就接了，因为你最熟悉这个位置。",
+          "score": {
+            "label": "P04",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "会尽量别让家里出事，自己辛苦点也行。",
+          "score": {
+            "label": "P05",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "边做边有点怨，但又停不下来。",
+          "score": {
+            "label": "P06",
+            "group": "M",
+            "hostility": "P",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "会把整个流程安排好，确保别再乱成一锅。",
+          "score": {
+            "label": "P07",
+            "group": "D",
+            "hostility": "O",
+            "g": 1,
+            "s": 0
+          }
+        },
+        {
+          "key": "E",
+          "text": "能做就做，做完尽快回自己房间或离场。",
+          "score": {
+            "label": "P13",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "prompt": "深夜一个人时，哪句更像你内心偶尔会冒出来的那种声音？",
+      "options": [
+        {
+          "key": "A",
+          "text": "“是不是我再好一点，很多关系就不会这么悬。”",
+          "score": {
+            "label": "P01",
+            "group": "M",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "B",
+          "text": "“我不能松，一松就可能什么都没了。”",
+          "score": {
+            "label": "P11",
+            "group": "D",
+            "hostility": "I",
+            "g": 1,
+            "s": 1
+          }
+        },
+        {
+          "key": "C",
+          "text": "“我最好别让任何人看到我狼狈的样子。”",
+          "score": {
+            "label": "P14",
+            "group": "W",
+            "hostility": "I",
+            "g": 2,
+            "s": 1
+          }
+        },
+        {
+          "key": "D",
+          "text": "“其实很多关系和热闹，抽掉也没什么。”",
+          "score": {
+            "label": "P16",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        },
+        {
+          "key": "E",
+          "text": "“我已经很久没搞清楚自己到底想要什么了。”",
+          "score": {
+            "label": "P15",
+            "group": "W",
+            "hostility": "N",
+            "g": 0,
+            "s": 2
+          }
+        }
+      ]
+    }
+  ]
+}

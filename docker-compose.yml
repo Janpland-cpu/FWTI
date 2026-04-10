@@ -1,0 +1,7 @@
+services:
+  sbti-site:
+    build: .
+    container_name: sbti-site
+    restart: unless-stopped
+    ports:
+      - "8088:80"
